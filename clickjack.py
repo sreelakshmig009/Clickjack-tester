@@ -4,7 +4,6 @@ import threading
 from colorama import Fore
 
 def check(url):
-    ''' check given URL is vulnerable or not '''
 
     try:
         if "http" not in url: url = "http://" + url
@@ -35,6 +34,7 @@ def main():
             listVulnerableSite(site.split('\n')[0])
         
         elif not status: print(Fore.CYAN+"[-] "+Fore.GREEN+site.split('\n')[0] +Fore.WHITE+ " is "+Fore.CYAN+" NOT Vulnerable")
-        else: print(Fore.CYAN+'Every single thing is crashed, Python got mad, dude wtf you just did?')
+        else: print(Fore.CYAN+'Site crashed, you just got clickjacked')
  
-if __name__ == '__main__': main()
+if __name__ == '__main__': 
+    main()
