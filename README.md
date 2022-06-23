@@ -6,6 +6,7 @@ A python script designed to check if the website is vulnerable of clickjacking a
 
 ```
 python clickjack.py <file_name>
+#python3 in case of Linux environment
 ```
 
 ### Example
@@ -13,7 +14,7 @@ python clickjack.py <file_name>
 ##### Input
 
 ```
-python3 clickjack.py sites.txt
+python clickjack.py sites.txt
 ```
 
 ##### sites.txt
